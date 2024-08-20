@@ -22,18 +22,18 @@ unset($_SESSION['error']);
     <?php endif; ?>
 
     <form action="index.php?page=edit_post" method="POST">
-    <input type="hidden" name="id" value="<?= htmlspecialchars($post['id']) ?>">
+    <input type="hidden" name="id" value="<?= htmlspecialchars($post[0]['id']) ?>">
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title" value="<?= htmlspecialchars($post['title']) ?>" required>
+            <input type="text" class="form-control" id="title" name="title" value="<?= htmlspecialchars($post[0]['title']) ?>" required>
         </div>
         <div class="mb-3">
             <label for="author" class="form-label">Author</label>
-            <input type="text" class="form-control" id="author" name="author" value="<?= htmlspecialchars($post['author']) ?>" required>
+            <input type="text" class="form-control" id="author" name="author" value="<?= htmlspecialchars($post[0]['author']) ?>" required>
         </div>
         <div class="mb-3">
             <label for="content" class="form-label">Content</label>
-            <textarea class="form-control" id="content" name="content" required><?= htmlspecialchars($post['content']) ?></textarea>
+            <textarea class="form-control" id="content" name="content" required><?= htmlspecialchars($post[0]['content']) ?></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Update Post</button>
         <a href="../index.php?page=list" class="btn btn-secondary">Back to List</a>
