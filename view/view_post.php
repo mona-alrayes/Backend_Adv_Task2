@@ -10,14 +10,14 @@
 <div class="container mt-5">
     <h2>View Post</h2>
     <div class="mb-3">
-        <strong>Title:</strong> <?= htmlspecialchars($post['title']) ?>
+        <strong>Title:</strong> <?= htmlspecialchars($post[0]['title']) ?>
     </div>
     <div class="mb-3">
-        <strong>Author:</strong> <?= htmlspecialchars($post['author']) ?>
+        <strong>Author:</strong> <?= htmlspecialchars($post[0]['author']) ?>
     </div>
     <div class="mb-3">
         <strong>Content:</strong>
-        <p><?= nl2br(htmlspecialchars($post['content'])) ?></p>
+        <p><?= nl2br(htmlspecialchars($post[0]['content'])) ?></p>
     </div>
     <a href="../index.php?page=list" class="btn btn-secondary">Back to List</a>
 </div>
