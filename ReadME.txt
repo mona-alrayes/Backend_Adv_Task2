@@ -1,4 +1,4 @@
-1- run the script DATABASE.PHP to execute the database and the table 
+1- run the script DATABASE.sql to execute the database and the table 
 2- go to file db/Database.php and change password of the database to " " 
 3- to run the project with terminal 
 php S localhost:8000
